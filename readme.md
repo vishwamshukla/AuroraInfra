@@ -56,3 +56,8 @@ Follow these steps to set up and run the AuroraInfra.
 2. The server will automatically open the app in your default browser at::
    ```text
     http://localhost:3000
+## Front-end Overview
+
+Here’s how the frontend form looks:
+
+![Frontend Deployment Form](./images/frontend-form.png "Frontend Deployment Form")
