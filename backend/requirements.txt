@@ -1,0 +1,4 @@
+fastapi
+uvicorn
+python-terraform
+boto3
