@@ -14,9 +14,28 @@ function DeploymentForm() {
         azureClientSecret: "",
     });
 
-    const handleSubmit = () => {
-        console.log("Form submitted:", form);
-        // Add API call logic here
+    const handleSubmit = async () => {
+        try {
+            // API endpoint for backend
+            const response = await fetch("http://localhost:8000/deploy", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(form), // Send the entire form data
+            });
+
+            const result = await response.json();
+
+            if (response.ok) {
+                alert(`Deployment initiated: ${result.status}`);
+            } else {
+                alert(`Error: ${result.detail}`);
+            }
+        } catch (error) {
+            console.error("Error during deployment:", error);
+            alert("An error occurred during deployment. Check the console for details.");
+        }
     };
 
     return (

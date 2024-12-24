@@ -61,3 +61,56 @@ Follow these steps to set up and run the AuroraInfra.
 Here’s how the frontend form looks:
 
 ![Frontend Deployment Form](./images/frontend-form.png "Frontend Deployment Form")
+
+## **Backend Setup**
+
+### **Prerequisites**
+
+1. **Python**:
+   - Ensure you have **Python 3.8 or higher** installed.
+   - Download from [Python Official Website](https://www.python.org/).
+
+2. **Pip (Python Package Manager)**:
+   - Verify installation:
+     ```bash
+     pip --version
+     ```
+
+3. **Terraform**:
+   - Install Terraform by downloading it from [Terraform Downloads](https://www.terraform.io/downloads.html).
+   - Verify installation:
+     ```bash
+     terraform --version
+     ```
+
+---
+
+### **Steps to Execute**
+
+#### **1. Navigate to the Backend Directory**
+1. Open your terminal and navigate to the backend folder:
+   ```bash
+   cd AuroraInfra/backend
+#### **2. Navigate to the Backend Directory**
+1. Install the required Python libraries:
+   ```bash
+   pip install -r requirements.txt
+   
+#### **3. Start the backend server**
+1. Run the backend server using Uvicorn:
+   ```bash
+   uvicorn main:app --reload
+
+### **Backend Overview**
+The backend handles API requests from the frontend and executes Terraform configurations to deploy cloud infrastructure.
+
+Here’s how the terminal looks when request reaches backend:
+
+![Backend server logs 1](./images/backend_1.png "Backend server logs 1")
+
+![Backend server logs 2](./images/backend_2.png "Backend server logs 2")
+
+![Backend server logs 3](./images/backend_3.png "Backend server logs 3")
+
+![Backend server logs 4](./images/backend_4.png "Backend server logs 3")
+
