@@ -1,6 +1,6 @@
 # **AuroraInfra**
 
-AuroraInfra is a deployment platform that enables users to deploy cloud infrastructure seamlessly on AWS, GCP, and Azure. This section covers the **frontend setup** only, allowing users to interact with a modern web-based form.
+AuroraInfra is a deployment platform that enables users to deploy cloud infrastructure seamlessly on AWS, GCP, and Azure. 
 
 ---
 
